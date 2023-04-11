@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Book from './Book'
+import './BookList.css'
 
 export class BookList extends Component {
   render() {
@@ -11,9 +12,20 @@ export class BookList extends Component {
     })
    
     return (
-      <div>
-        {bookList}
-      </div>
+        <section className="page-section"  id="portfolio">
+        <div className="container">
+            <div className="text-center">
+                <h2 className="section-heading text-uppercase">BookFolio</h2>
+                <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                
+            </div>
+            <div className="row">
+
+              {bookList}
+
+            </div>
+        </div>
+    </section>
     )
   }
 }
